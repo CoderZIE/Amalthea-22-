@@ -1,0 +1,23 @@
+
+body{
+  background-image: url(w.jpg);
+}
+
+/* title CSS "What we do part " */
+
+.zti{
+  color: #ffffff;
+  margin: 50px;
+  text-align: center;
+}
+
+.zhead_title{
+  font-size: 250%;
+}
+
+.zpara_title{
+  font-size: 150%;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 15px;
+}
