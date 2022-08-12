@@ -1,3 +1,13 @@
+/* css for preloader */
+#preloader {
+    top: 0;
+    left: 0;
+    background: #000 url(https://64.media.tumblr.com/c94c0cec6a4af99dcfd6c054f0b5a0b2/tumblr_p5csyyog791s32c21o1_540.gifv) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
 
 body{
   background-image: url(w.jpg);
