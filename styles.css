@@ -17,8 +17,9 @@ body{
 
 .zti{
   color: #ffffff;
-  margin: 50px;
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .zhead_title{
@@ -27,7 +28,60 @@ body{
 
 .zpara_title{
   font-size: 150%;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
   padding: 15px;
+  justify-content: center;
+}
+
+.zslider{
+  -webkit-appearance: none;
+  width: 15%;
+  height: 5px;
+  background: #ffffff;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+   border-radius: 25px;
+}
+
+.zslider:hover {
+  opacity: 1;
+}
+
+.zslider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+  border-radius: 5px;
+  width: 50px;
+  background-color: #0000ff;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.bgblue{
+  background-color: #0000ff;
+  margin-top: 20px;
+  opacity: 0.3;
+  border-radius: 10px;
+}
+
+
+
+.zpara_theme{
+  color: #ffffff;
+  padding-top: 10px;
+  font-size: 150%;
+  padding-left: 20px;
+  text-align: justify;
+}
+
+.explore-amt{
+  margin-top: 50px;
 }
