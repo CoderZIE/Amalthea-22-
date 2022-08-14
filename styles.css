@@ -97,7 +97,9 @@
   justify-content: space-between;
 }
 
-
+.Rnavbar ul{
+    list-style-type: none
+}
 
 .Rnavbar ul li a {
   letter-spacing: 0.05vw;
@@ -270,7 +272,7 @@ Animations
   padding: 0.5vw;
   margin-top: 0.1vw;
   height: fit-content;
-  width: 8.5vw;
+  width: fit-content;
   padding-right: 1.6vw;
   border-top-left-radius: 0;
   border-top-right-radius: 1.6vw;
