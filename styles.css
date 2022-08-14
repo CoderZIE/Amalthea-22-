@@ -31,7 +31,7 @@
   /* transform: rotate(0deg); */
   transform-origin: 57.73502691896258% 50%;
   width: 10vw;
-  animation: rotation 12s infinite linear;
+  animation: rotation 6s infinite linear;
 }
 
 :root {
