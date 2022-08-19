@@ -65,23 +65,23 @@
 
 .Rheader {
   width: var(--divWidth);
-  height: 100vh;
+  height: fit-content;
 }
 
 .RsectDiv {
   z-index: -1;
   width: 100%;
   position: relative;
-  top: 0vh;
-  height: 14vh;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  top: 0px;
+  height: 80px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4) 30%,rgba(0, 0, 0, 1));
 }
 
 .Rback-video {
   z-index: -1;
   object-fit: fill;
   width: 100%;
-  height: 100%;
+  height: 709px;
   position: absolute;
   left: 0;
   top: 0;
@@ -89,7 +89,7 @@
 
 .Rnavbar {
   width: 100%;
-  height: 11vh;
+  height: 90px;
   /* background-color: red; */
   display: flex;
   flex-direction: row;
@@ -97,19 +97,17 @@
   justify-content: space-between;
 }
 
-.Rnavbar ul{
-    list-style-type: none
-}
+
 
 .Rnavbar ul li a {
-  letter-spacing: 0.05vw;
+  letter-spacing: 0.85px;
   font-weight: 600;
-  padding: 0.75vw;
-  margin-left: 2.75vw;
-  margin-right: 2.75vw;
+  padding: 12.5px;
+  margin-left: 16.75px;
+  margin-right: 45.75px;
   font-family: Helvetica;
   text-decoration: none;
-  font-size: 1.5vw;
+  font-size: 25px;
   color: white;
 }
 
@@ -122,19 +120,20 @@
   Hamburger
 **/
 .hamburger {
-  padding: 0.75vw;
-  margin-left: 2.75vw;
-  margin-right: 2.75vw;
-  z-index: 5;
+  padding: 12.5px;
+  margin-left: 45.75px;
+  margin-right: 45.75px;
+  z-index: 6;
 }
 
 .hamburger div {
   position: relative;
-  width: 2vw;
-  height: 0.25vw;
-  border-radius: 3px;
+  /* width: 2vw; */
+  width: 30px;
+  height: 3.75px;
+  border-radius: 0.75px;
   background-color: white;
-  margin-top: 0.35vw;
+  margin-top: 5.25px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -142,12 +141,14 @@
 Nav Styles
 **/
 .nav {
+  font-family:Helvetica;
+  z-index: 5;
   position: fixed;
-  width: 25%;
+  min-width: 220px;
+  width: 30%;
   height: 100%;
   background-color: #090E6B;
   top: -100%;
-  /* left: 0; */
   right: 0;
   bottom: 0;
   overflow: hidden;
@@ -196,6 +197,11 @@ nav a:hover:before {
   height: 100%;
 }
 
+.navIcon{
+  margin-left: 2px;
+  margin-right: 5px;
+  height: 25px;
+}
 /**
 Animations
 **/
@@ -221,69 +227,82 @@ Animations
 
 /* Middle Part of Header */
 .RcentralPart {
-  justify-content: center;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+  height: 350px;
+}
+
+.RcentralWrapper{
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: flex-start;
   flex-direction: row;
   align-items: flex-end;
-  /* background-color: red; */
-  height: 48vh;
+  margin-right: 40px
 }
 
 .RamlLogo {
-  width: 13vw;
+  /* margin-left: 165px; */
+  width: 180px;
 }
 
 .Rtext {
-  width: 55vw;
+  width: 850px;
   display: flex;
   flex-direction: column;
 }
 
 .Rwelcome {
-  margin-left: 0.8vw;
+  margin-top: -18.5px;
+  margin-left: 12.5px;
   font-family: Helvetica;
-  font-size: 2vw;
+  font-size: 30px;
   color: white;
 }
 
 .Raml22 {
-  margin-bottom: 2.5vh;
-  margin-top: 5vh;
-  height: 6vw;
-  width: 53vw;
+  margin-bottom: 17.5px;
+  margin-top: 27.5px;
+  width: 855px;
 }
 
 .RbottomPart {
+  width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   /* background-color: yellow; */
-  height: 27vh;
+  height: 189px;
 }
+
 
 .RleftSide {
   height: 110%;
-  width: 11%;
+  /* width: 11%; */
   display: flex;
   /* background-color: red; */
   align-items: flex-end
 }
 
 .Rca {
-  padding: 0.5vw;
-  margin-top: 0.1vw;
+  padding: 7.5px;
+  margin-top: 131.25px;
   height: fit-content;
-  width: fit-content;
-  padding-right: 1.6vw;
+  width: 140px;
+  padding-right: 25px;
   border-top-left-radius: 0;
-  border-top-right-radius: 1.6vw;
-  border-bottom-right-radius: 1.6vw;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
   border-bottom-left-radius: 0;
   background-color: rgba(255, 255, 255, 0.2);
   cursor: pointer;
 }
 
 .Rca p {
-  font-size: 2vw;
+  font-size: 30px;
   font-family: Helvetica;
   color: white;
 }
@@ -298,17 +317,18 @@ Animations
 
 
 .RmiddlePart {
+
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
-  width: 78%;
+  /* width: 78%; */
   /* background-color: yellow; */
 }
 
 #Rrotate {
   transform-origin: 57.73502691896258% 50%;
-  height: 75%;
+  height: 125px;
   transform: rotate(0deg);
   animation: "rotation 9s infinite linear";
 }
@@ -323,7 +343,7 @@ Animations
 
 .RmiddlePart div h1 {
   font-family: Helvetica;
-  font-size: 12vh;
+  font-size: 80px;
   color: white;
   text-transform: uppercase;
 }
@@ -335,22 +355,23 @@ Animations
 
 .RrightSide {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: end;
   height: 100%;
-  width: 11%;
+  /* width: 11%; */
   /* background-color: blue; */
 }
 
 .RrightSide ul {
   list-style-type: none;
+  margin-bottom: -22.5px;
 }
 
 .RrightSide a img {
   /* background-color: red; */
-  height: 3vw;
-  padding: 1vh;
-  margin-right: 2vh;
+  height: 46.25px;
+  padding: 7.5px;
+  margin-right: 15px;
   border-radius: 50%;
 }
 
@@ -388,6 +409,143 @@ Animations
 @keyframes caret {
   50% {
     border-color: transparent;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  :root {
+    --divWidth: calc(100vw);
+  }
+
+  .RcentralWrapper {
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  }
+
+.Rtext{
+  width: 100vw;
+  height: 149px;
+  align-items: center;
+  justify-content: center;
+}
+
+.RcentralPart{
+  height: fit-content;
+}
+
+.RamlLogoDiv{
+  margin-bottom: 10px;
+}
+
+.RamlLogo{
+  width: 130px
+}
+
+.Raml22{
+  width: 67vw;
+  max-width: 692.5px;
+  margin-bottom: 17px;
+  margin-top: 17px;
+}
+
+.Rnavbar{
+  height: 50px;
+}
+.RrightSide a img{
+  height: 36px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.RbottomPart{
+  
+  height: 133px;
+}
+
+.Rca{
+width: 93px;
+}
+
+.Rca p{
+  font-size: 22px;
+}
+
+#Rrotate{
+  height: 100px;
+}
+
+#RiiiText{
+  font-size: 66px;
+}
+.Rback-video{
+  height: 635px;
+}
+}
+
+@media only screen and (max-width: 775px) {
+  .RamlLogo {
+    width: 17.75vw;
+  }
+
+  .RcentralPart{
+    height: 372.575px;
+  }
+
+  .RcentralWrapper{
+    margin-right: 0px;
+  }
+
+  .RrightSide a img {
+    height: 8vw;
+  }
+
+  .Rwelcome{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  
+  #Rrotate{
+  height: 75px;
+  }
+
+  #RiiiText{
+    font-size: 50px;
+  }
+
+.RmiddlePart{
+  width: 0px;
+  transform: translate(-210px,-25px);
+  justify-content: unset;
+}
+
+.Rca{
+  transform: translateY(25px);
+}
+  
+}
+
+@media only screen and (max-width: 350px){
+  .RmiddlePart{
+    transform: translate(-150px,-25px);
+  }
+
+  .Rnavbar ul li a{
+    margin: 0px;
+  }
+
+  .hamburger{
+    margin: 0px;
+  }
+
+  #Rrotate{
+    height: 50px;
+  }
+
+  #RiiiText{
+    font-size: 30px;
   }
 }
 
