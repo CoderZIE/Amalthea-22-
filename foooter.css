@@ -1,0 +1,278 @@
+#Vedant .amlhead{
+    padding-left: 1.6rem;
+    color: #ae0957;
+    font-size: 2.2rem;
+}
+
+#Vedant .add{
+    display: flex;
+}
+
+#Vedant .location{
+    font-size: 1.8rem;
+}
+
+#Vedant .mail1{
+    display: flex;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+#Vedant .maillo{
+    font-size: 1.8rem;
+}
+
+#Vedant .maillo2{
+    padding-right: 0.3rem;
+    font-size: 1.5rem;
+}
+
+#Vedant .logo{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    display: flex;
+    /* justify-content: center; */
+}
+
+#Vedant .pad2{
+    padding-inline: 0.7rem;
+}
+
+#Vedant .one-part {
+    margin-left: 2rem;
+    /* margin-top: 3%; */
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    /* justify-content: center; */
+    align-items: left;
+}
+
+footer {
+    background-color: #0a0d28;
+    display: flex;
+}
+
+#Vedant .heading {
+    font-size: 1.2rem;
+    color: #ae0957;
+    /* margin-top: 10%; */
+    margin-bottom: 1.2rem;
+}
+
+#Vedant .ql {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 20%;
+    margin-top:2rem;
+    padding-left: 2rem;
+    margin-inline: 1.5rem;
+}
+
+#Vedant .i {
+    margin-top: 0.1rem;
+}
+
+/* .subscribe {
+    margin-top: 2%;
+    border: 2px solid red;
+    width: 35%;
+    /* height: 100%; */
+
+
+#Vedant .ext-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 15%;
+}
+
+#Vedant .submitbox{
+    display: flex;
+    width: 36rem;
+    margin-top: 2rem;
+}
+
+#Vedant .mailkl{
+    display: flex;
+    /* border: 2px solid white; */
+    width: 10rem;
+    margin-left: 6rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: #c1095e;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#Vedant .mailkl img{
+    height: 9.5rem;
+    width: 9rem;
+}
+
+#Vedant #container {
+    text-align: center; 
+    margin-top: 0.5rem;
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    background: white;
+    height: auto;
+    width: 55%;
+    padding: 0.5rem;
+
+    /* position: fixed; */
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+
+
+}
+
+#Vedant #container h2 {
+    background: url(https://static.pexels.com/photos/5782/nature-flowers-vintage-plant.jpg);
+    /*   الكود المسؤال عن اضافة شفافية للنص */
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    	/* background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%); */
+    /* font-family: 'Playfair Display', serif; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+    margin: 0;
+
+
+
+}
+
+#Vedant #container p {
+    /* font-family: 'Farsan', cursive; */
+    margin: 0.1rem 0 1.5rem 0;
+    font-size: 1rem;
+    color: #607286;
+}
+
+#Vedant #container input {
+    /* 	background: rgba(255, 13, 254, 0.90); */
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    border-radius: 7px;
+    background: #eee;
+    padding: 1em 2em;
+    outline: none;
+    border: none;
+    color: #222;
+    transition: 0.3s linear;
+}
+
+::placeholder {
+    color: #999;
+}
+
+#Vedant #container input:focus {
+    background: rgba(0, 0, 333, 0.10);
+}
+
+#Vedant #container button {
+    background-image: linear-gradient(to left, rgba(255, 146, 202, 0.75) 0%, rgba(145, 149, 251, 0.86) 100%);
+    /* box-shadow: 0 9px 25px -5px #df91fb; */
+    /* font-family: 'Abel', sans-serif; */
+    padding: 0.5em 1.9em;
+    margin-top: 5%;
+    border-radius: 7px;
+    font-size: 1.4em;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 1em;
+    outline: none;
+    border: none;
+    transition: 0.3s linear;
+    margin-bottom: 2%;
+}
+
+#Vedant #container button:hover {
+    transform: translatey(2px);
+}
+
+#Vedant #container button:active {
+    transform: translatey(5px);
+}
+
+#Vedant .inp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .pad{
+    margin-top: 2%;
+} */
+
+#Vedant .white1{
+    color: white;
+}
+
+#Vedant123{
+    background-color: black;
+    color: white;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+    padding-left: 2rem;
+}
+
+@media only screen and (min-width:900px) and (max-width:1200px){
+    #Vedant *{
+        font-siZe: 13px;
+    }
+}
+
+@media only screen and (min-width:700px) and (max-width:900px){
+    #Vedant *{
+        font-siZe: 10px;
+    }
+}
+
+@media only screen and (min-width:400px) and (max-width:700px){
+    footer{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #Vedant *{
+        font-size: 10px;
+    }
+    #Vedant .ql{
+        margin-left: 8rem;
+    } 
+
+    #Vedant .submitbox{
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width: 400px){
+    footer{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #Vedant *{
+        font-size: 8px;
+    }
+    #Vedant .ql{
+        margin-left: 8rem;
+    } 
+
+    #Vedant .submitbox{
+        margin-top: 2rem;
+    } 
+}
