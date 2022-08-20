@@ -16,10 +16,6 @@
   padding: 0;
 }
 
-*, ::after, ::before {
-    box-sizing: unset;
-}
-
 ul {
   list-style-type: none;
 }
@@ -680,7 +676,7 @@ body{
 }
 
 hr{
-  border-top: 55px solid white;
+   border-top: 0.75px solid white;
 }
 
 /* Cards css */
