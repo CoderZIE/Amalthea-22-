@@ -713,6 +713,7 @@ hr{
   transform: translateY(-20px);
 }
 #ama_cards .card .name{
+  box-sizing: unset;
   color: white;
   padding: 15px 30px 20px 10px;
   background-color: #C1095E;
