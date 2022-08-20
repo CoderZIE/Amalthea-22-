@@ -550,9 +550,21 @@ width: 93px;
 }
 
 /* Rudra CSS ends */
-/* body{
+
+/* Zaqi CSS Starts */
+/* title CSS "What we do part " */
+
+
+
+body{
   background-image: url(w.jpg);
-} */
+}
+
+img{
+  height: 100px;
+  width: auto;
+  margin: 30px;
+}
 
 /* title CSS "What we do part " */
 
@@ -571,7 +583,7 @@ width: 93px;
   font-size: 150%;
   margin-left: 10%;
   margin-right: 10%;
-  padding: 15px;
+  padding-top: 15px;
   justify-content: center;
 }
 
@@ -607,9 +619,9 @@ width: 93px;
 }
 
 .bgblue{
-  background-color: #0000ff;
+  background: rgba(0, 0, 255, .3);
   margin-top: 20px;
-  opacity: 0.3;
+  opacity: 1;
   border-radius: 10px;
 }
 
@@ -620,9 +632,44 @@ width: 93px;
   padding-top: 10px;
   font-size: 150%;
   padding-left: 20px;
+
   text-align: justify;
 }
 
 .explore-amt{
   margin-top: 50px;
 }
+
+#znav-amt{
+  background: rgba(0, 0, 255, .3);
+  border-radius: 10px;
+  margin: 60px 65px;
+  height: 150px;
+  width: 150px;
+  transform: rotate(45deg);
+}
+
+.nav-amt{
+  margin-bottom: 30px;
+}
+
+.zae-amt{
+  color: white;
+  text-decoration: none;
+  font-size: 150%;
+  opacity: 1;
+  margin: 50px 0px;
+  transform: rotate(-45deg);
+  text-align: center;
+}
+
+.zmt{
+  opacity: 1;
+  color: white;
+  text-decoration: none;
+}
+
+hr{
+  border-top: 55px solid white;
+}
+
