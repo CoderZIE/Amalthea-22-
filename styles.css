@@ -564,7 +564,7 @@ body{
   background-image: url(w.jpg);
 }
 
-img{
+.zimg{
   height: 100px;
   width: auto;
   margin: 30px;
