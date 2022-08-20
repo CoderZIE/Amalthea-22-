@@ -677,3 +677,86 @@ hr{
   border-top: 55px solid white;
 }
 
+/* Cards css */
+
+
+
+
+#ama_cards .a_container{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 300px;
+  gap:1.3rem;
+}
+#ama_cards .card{
+  position: relative;
+  width: 310px;
+  height: 200px;
+  padding: 7px;
+  border-radius:15px;
+
+  box-shadow: inset 5px 5px 15px rgba(0,0,0,0.4),inset -5px -5px 8px rgba(255,255,255,0.5),5px 5px 5px rgba(0,0,0,0.3),-5px -5px 15px rgba(255,255,255,0.4)
+}
+#ama_cards .all_info{
+  position: relative;
+  transition: 0.5s;
+}
+#ama_cards .card:hover .all_info{
+  transform: translateY(-20px);
+}
+#ama_cards .card .name{
+  color: white;
+  padding: 15px 30px 20px 10px;
+  background-color: #C1095E;
+  height: 50px;
+  border-radius: 0 0 15px 15px;
+}
+#ama_cards .info{
+  height: 90px;
+  padding: 10px 20px 10px 10px;
+
+  background-color: white;
+  border-radius:15px 15px  0 0 ;
+}
+#ama_cards .info p{
+  font-weight: bold;
+}
+#ama_cards p{
+  display: inline-block;
+
+  margin:2px 0 2px 0;
+}
+
+#ama_cards .name_p{
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 8px;
+}
+#ama_cards .info_2{
+  margin-left: 45px;
+}
+#ama_cards .extra_2{
+  margin:0 0 0 27px;
+}
+#ama_cards .extra_3{
+  margin:0 0 0 25px;
+}
+#ama_cards hr{
+  border-color: #ffffff;
+  margin:0;
+  width:65%;
+  border-bottom:0;
+
+}
+#ama_cards .a_container img{
+  position: absolute;
+  height: 100px;
+  border-radius: 100%;
+  width: 100px;
+  bottom: 17px;
+  right: 17px;
+}
+
+
