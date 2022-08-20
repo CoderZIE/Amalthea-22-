@@ -11,6 +11,7 @@
 /* Rudra CSS Starts */
 
 * {
+  box-sizing: unset;
   margin: 0;
   padding: 0;
 }
