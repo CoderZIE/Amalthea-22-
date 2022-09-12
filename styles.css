@@ -15,7 +15,9 @@
   margin: 0;
   padding: 0;
 }
-
+body{
+    background-image: url("https://drive.google.com/uc?export=view&id=1ftJ_-zneNifuE62gJaHa2XEl-rsu8ka3");
+}
 ul {
   list-style-type: none;
 }
