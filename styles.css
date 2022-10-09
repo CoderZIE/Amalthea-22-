@@ -13,12 +13,17 @@
 
 body{
   background-image: url(w.jpg);
+  font-family: Helvetica;
 }
 
-img{
+.zimg{
+  margin: 30px;
+  margin-right: 25vw;
   height: 100px;
   width: auto;
-  margin: 30px;
+}
+p{
+  font-family: Helvetica;
 }
 
 /* title CSS "What we do part " */
@@ -74,25 +79,44 @@ img{
 }
 
 .bgblue{
+  margin: 3vw;
   background: rgba(0, 0, 255, .3);
   margin-top: 20px;
   opacity: 1;
   border-radius: 10px;
+  padding-bottom: 30px;
 }
 
-
+.ziframe{
+  width: 50vw;
+  padding-right: 5vw;
+  padding-left: 2.5vw;
+  /* margin-right: 10px; */
+}
 
 .zpara_theme{
   color: #ffffff;
   padding-top: 10px;
+  padding-left: 5vw;
+  padding-right: 2.5vw;
   font-size: 150%;
   padding-left: 20px;
-
+  width: 50vw;
   text-align: justify;
+  margin-left: 2.5vw;
+
 }
 
 .explore-amt{
   margin-top: 50px;
+}
+
+.zrexplorewrap{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 #znav-amt{
@@ -110,6 +134,12 @@ img{
   border-color: white;
   left: 10%;
 } */
+
+.zrour{
+  display:flex ;
+  flex-direction: row;
+  align-items: center;
+}
 
 .nav-amt{
   margin-bottom: 30px;
@@ -1227,23 +1257,28 @@ Animations
 
 .RrightSide a img.Rtweeter:hover {
   background-color: #1f9cee;
+  box-shadow: 0 0 30px #2196f3, 0 0 80px #2196f3, 0 0 120px #2196f3;
 }
 
 .RrightSide a img.RyouTube:hover {
   background-color: #ff0000;
+  box-shadow: 0 0 30px #ff0000, 0 0 80px #ff0000, 0 0 120px #ff0000;
 }
 
 .RrightSide a img.Rlinkedin:hover {
   background-color: #0a66c2;
+  box-shadow: 0 0 30px #0a66c2, 0 0 80px #0a66c2, 0 0 120px #0a66c2;
 }
 
 .RrightSide a img.Rfacebook:hover {
   background-color: #1877f2;
+  box-shadow: 0 0 30px #1877f2, 0 0 80px #1877f2, 0 0 120px #1877f2;
 }
 
 
 .RrightSide a img.Rinstagram:hover {
   background-color: #c13584;
+  box-shadow: 0 0 30px #c13584, 0 0 80px #c13584, 0 0 120px #c13584;
 }
 
 @keyframes rotation {
@@ -1409,6 +1444,8 @@ width: 93px;
 
 
 .zimg{
+  position: relative;
+  left: -22.5vw;
   height: 100px;
   width: auto;
   margin: 30px;
@@ -1492,8 +1529,8 @@ width: 93px;
   background: rgba(0, 0, 255, .3);
   border-radius: 10px;
   margin: 60px 65px;
-  height: 150px;
-  width: 150px;
+  height: 95px;
+  width: 95px;
   transform: rotate(45deg);
 }
 
