@@ -269,6 +269,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
 //Aditya JS start
 let cubes = document.querySelectorAll(".image-cube");
 let cube = document.querySelectorAll(".image-cube");
+let front = document.querySelectorAll('.front')
 let btnNext = document.querySelector("#next");
 let btnPrev = document.querySelector("#prev");
 function rotateCube(i){
@@ -284,7 +285,16 @@ btnNext.addEventListener("click", () => {
 	// }
 	cubes[0].style.transform = `rotateY(${pos}deg)`;
 	console.log(cubes[0].style.transform )
-
+	if(pos===0){
+		front.forEach((item)=>{
+			item.style.boxShadow = '3px 3px 10px white';
+		})
+	}
+	else{
+		front.forEach((item)=>{
+			item.style.boxShadow ='0px';
+		})
+	}
 	setTimeout(()=>{
 		cubes[1].style.transform = `rotateY(${pos}deg)`;
 	},500)
@@ -292,11 +302,13 @@ btnNext.addEventListener("click", () => {
 		cubes[2].style.transform = `rotateY(${pos}deg)`;
 	},500)
 
+
 	});
 
 
 	btnPrev.addEventListener("click", () => {
 		console.log('hi');
+	
 	  pos += 90;
 		cubes[0].style.transform = `rotateY(${pos}deg)`;
 		setTimeout(()=>{
@@ -307,5 +319,6 @@ btnNext.addEventListener("click", () => {
 		},500)
 
 		});
+
 //Aditya js ends
 
