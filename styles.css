@@ -1644,7 +1644,6 @@ hr{
   right: 17px;
 }
 
-#SLIDER
 #slider .wrapper {
   display: flex;
   flex-direction: column;
@@ -1689,26 +1688,26 @@ hr{
 }
 #slider .front {
   position: relative;
-  /* box-shadow: 3px 3px 10px white; */
+  box-shadow: 3px 3px 10px white;
   transform: translateZ(125px);
   top: 26px;
   left: 26px;
 }
 #slider .right {
-  /* box-shadow: 3px 3px 10px white; */
+  box-shadow: 3px 3px 10px white;
   transform: rotateY(-270deg) translateX(125px);
   transform-origin: 100% 0;
   top: 26px;
   left: 26px;
 }
 #slider .back {
-  /* box-shadow: 3px 3px 10px white; */
+  box-shadow: 3px 3px 10px white;
   transform: translateZ(-125px) rotateY(180deg);
   top: 26px;
   left: 26px;
 }
 #slider .left {
-  /* box-shadow: 3px 3px 10px white; */
+  box-shadow: 3px 3px 10px white;
   transform: rotateY(270deg) translateX(-125px);
   transform-origin: 0 50%;
   top: 26px;
