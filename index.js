@@ -8,14 +8,16 @@ $( function() {
 
 window.onscroll = function(event){
   var scr = window.pageYOffset;
-  document.getElementsByClassName('zslider')[0].value= scr;
-  document.getElementsByClassName('zslider')[1].value= (scr/3);
-  document.getElementsByClassName('zslider')[2].value= (scr/5);
-  if(src>100 && src<200){
-    document.getElementsByClassName('zslider')[0].value= (100-scr);
+  document.getElementsByClassName('zslider')[0].value= scr/10;
+  document.getElementsByClassName('zslider')[1].value= (scr/13);
+  document.getElementsByClassName('zslider')[2].value= (scr/15);
+  document.getElementsByClassName('zslider')[3].value= (scr/20);
+  document.getElementsByClassName('zslider')[4].value= (scr/25);
+  if(src>500 && src<1000){
+    document.getElementsByClassName('zslider')[0].value= (1000-scr);
   }
   if(src>300 && src<600){
-    document.getElementsByClassName('zslider')[1].value= (200-(scr/3));
+    document.getElementsByClassName('zslider')[1].value= (1000-(scr/3));
   }
 }
 
@@ -250,7 +252,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
             typeWriter(dataText[i], 0, function () {
                 document.getElementById("Rrotate").style.removeProperty("animation");
                 document.getElementById("Rrotate").style.transform = "rotate(0deg)";
-                console.log("hii");
+                // console.log("hii");
                 // after callback (and whole text has been animated), start next text
                 StartTextAnimation(i + 1);
             });
@@ -306,3 +308,4 @@ btnNext.addEventListener("click", () => {
 
 		});
 //Aditya js ends
+
