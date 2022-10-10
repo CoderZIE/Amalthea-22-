@@ -1,5 +1,3 @@
-
-
 //Zaqi''s Javascript
 
 $( function() {
@@ -8,21 +6,101 @@ $( function() {
 
 // Javascript for slider
 
+//clapping the function
+
 window.onscroll = function(event){
   var scr = window.pageYOffset;
-  document.getElementsByClassName('zslider')[0].value= scr/10;
-  document.getElementsByClassName('zslider')[1].value= (scr/13);
-  document.getElementsByClassName('zslider')[2].value= (scr/15);
-  document.getElementsByClassName('zslider')[3].value= (scr/20);
-  document.getElementsByClassName('zslider')[4].value= (scr/25);
-  if(src>500 && src<1000){
-    document.getElementsByClassName('zslider')[0].value= (1000-scr);
+// for the first slider 
+  
+var c= scr/3;
+var a= c%100;
+var b= Math.floor(c/100); 
+
+  if(c<100){
+    document.getElementsByClassName('zslider')[0].value= (c);
   }
-  if(src>300 && src<600){
-    document.getElementsByClassName('zslider')[1].value= (1000-(scr/3));
+
+  else{
+    if(b%2==0){
+      document.getElementsByClassName('zslider')[0].value= (a);
+    }
+    else{
+      document.getElementsByClassName('zslider')[0].value= (100-a);
+    }
+  }
+
+// for the second slider
+var d= scr/5;
+a= d%100;
+b= Math.floor(d/100); 
+if(d<100){
+  document.getElementsByClassName('zslider')[1].value= (d);
+}
+
+else{
+  if(b%2==0){
+    document.getElementsByClassName('zslider')[1].value= (a);
+  }
+  else{
+    document.getElementsByClassName('zslider')[1].value= (100-a);
   }
 }
 
+// for the third slider
+var e= scr/7;
+a= e%100;
+b= Math.floor(e/100); 
+if(e<100){
+  document.getElementsByClassName('zslider')[2].value= (e);
+}
+
+else{
+  if(b%2==0){
+    document.getElementsByClassName('zslider')[2].value= (a);
+  }
+  else{
+    document.getElementsByClassName('zslider')[2].value= (100-a);
+  }
+}
+
+  
+
+
+// for the fourth slider
+var f= scr/10;
+a= f%100;
+b= Math.floor(f/100); 
+if(f<100){
+  document.getElementsByClassName('zslider')[3].value= (f);
+}
+
+else{
+  if(b%2==0){
+    document.getElementsByClassName('zslider')[3].value= (a);
+  }
+  else{
+    document.getElementsByClassName('zslider')[3].value= (100-a);
+  }
+}
+
+//for the fifth slider
+var g= scr/13;
+a= g%100;
+b= Math.floor(g/100); 
+if(g<100){
+  document.getElementsByClassName('zslider')[4].value= (g);
+}
+
+else{
+  if(b%2==0){
+    document.getElementsByClassName('zslider')[4].value= (a);
+  }
+  else{
+    document.getElementsByClassName('zslider')[4].value= (100-a);
+  }
+}
+
+}
 // javascript for explore elements
 
 $(document).ready(function(){
@@ -268,62 +346,46 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
 // Rudra JS end
 
-
 //Aditya JS start
-let Cubes = document.querySelectorAll(".image-cube");
+let cubes = document.querySelectorAll(".image-cube");
 let cube = document.querySelectorAll(".image-cube");
-let front = document.querySelectorAll('.front')
 let btnNext = document.querySelector("#next");
 let btnPrev = document.querySelector("#prev");
 function rotateCube(i){
-	Cubes[i].style.transform = `rotateY(${pos}deg)`;
+	cubes[i].style.transform = `rotateY(${pos}deg)`;
 }
 let pos = 0;
 
 btnNext.addEventListener("click", () => {
 
   pos -= 90;
-	// for (var i=0;i < Cubes.length;i++){
+	// for (var i=0;i < cubes.length;i++){
 	// 	setTimeout(rotateCube(i),5000);
 	// }
-	Cubes[0].style.transform = `rotateY(${pos}deg)`;
-	console.log(Cubes[0].style.transform )
-	if(pos===0){
-		front.forEach((item)=>{
-			item.style.boxShadow = '3px 3px 10px white';
-		})
-	}
-	else{
-		front.forEach((item)=>{
-			item.style.boxShadow ='0px';
-		})
-	}
-	setTimeout(()=>{
-		Cubes[1].style.transform = `rotateY(${pos}deg)`;
-	},500)
-	setTimeout(()=>{
-		Cubes[2].style.transform = `rotateY(${pos}deg)`;
-	},500)
+	cubes[0].style.transform = `rotateY(${pos}deg)`;
+	console.log(cubes[0].style.transform )
 
+	setTimeout(()=>{
+		cubes[1].style.transform = `rotateY(${pos}deg)`;
+	},500)
+	setTimeout(()=>{
+		cubes[2].style.transform = `rotateY(${pos}deg)`;
+	},500)
 
 	});
 
 
 	btnPrev.addEventListener("click", () => {
 		console.log('hi');
-	
 	  pos += 90;
-		Cubes[0].style.transform = `rotateY(${pos}deg)`;
+		cubes[0].style.transform = `rotateY(${pos}deg)`;
 		setTimeout(()=>{
-			Cubes[1].style.transform = `rotateY(${pos}deg)`;
+			cubes[1].style.transform = `rotateY(${pos}deg)`;
 		},500)
 		setTimeout(()=>{
-			Cubes[2].style.transform = `rotateY(${pos}deg)`;
+			cubes[2].style.transform = `rotateY(${pos}deg)`;
 		},500)
 
 		});
-
-
 //Aditya js ends
-
 
