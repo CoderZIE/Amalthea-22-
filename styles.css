@@ -91,6 +91,7 @@ p{
   width: 50vw;
   padding-right: 5vw;
   padding-left: 2.5vw;
+  pointer-events: none;
   /* margin-right: 10px; */
 }
 
