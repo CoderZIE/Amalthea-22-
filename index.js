@@ -1,59 +1,4 @@
-//Aditya JS start
-let Cubes = document.querySelectorAll(".image-cube");
-let cube = document.querySelectorAll(".image-cube");
-let front = document.querySelectorAll('.front')
-let btnNext = document.querySelector("#next");
-let btnPrev = document.querySelector("#prev");
-function rotateCube(i){
-	Cubes[i].style.transform = `rotateY(${pos}deg)`;
-}
-let pos = 0;
 
-btnNext.addEventListener("click", () => {
-
-  pos -= 90;
-	// for (var i=0;i < Cubes.length;i++){
-	// 	setTimeout(rotateCube(i),5000);
-	// }
-	Cubes[0].style.transform = `rotateY(${pos}deg)`;
-	console.log(Cubes[0].style.transform )
-	if(pos===0){
-		front.forEach((item)=>{
-			item.style.boxShadow = '3px 3px 10px white';
-		})
-	}
-	else{
-		front.forEach((item)=>{
-			item.style.boxShadow ='0px';
-		})
-	}
-	setTimeout(()=>{
-		Cubes[1].style.transform = `rotateY(${pos}deg)`;
-	},500)
-	setTimeout(()=>{
-		Cubes[2].style.transform = `rotateY(${pos}deg)`;
-	},500)
-
-
-	});
-
-
-	btnPrev.addEventListener("click", () => {
-		console.log('hi');
-	
-	  pos += 90;
-		Cubes[0].style.transform = `rotateY(${pos}deg)`;
-		setTimeout(()=>{
-			Cubes[1].style.transform = `rotateY(${pos}deg)`;
-		},500)
-		setTimeout(()=>{
-			Cubes[2].style.transform = `rotateY(${pos}deg)`;
-		},500)
-
-		});
-
-
-//Aditya js ends
 
 //Zaqi''s Javascript
 
@@ -324,5 +269,61 @@ document.addEventListener('DOMContentLoaded', function (event) {
 // Rudra JS end
 
 
+//Aditya JS start
+let Cubes = document.querySelectorAll(".image-cube");
+let cube = document.querySelectorAll(".image-cube");
+let front = document.querySelectorAll('.front')
+let btnNext = document.querySelector("#next");
+let btnPrev = document.querySelector("#prev");
+function rotateCube(i){
+	Cubes[i].style.transform = `rotateY(${pos}deg)`;
+}
+let pos = 0;
+
+btnNext.addEventListener("click", () => {
+
+  pos -= 90;
+	// for (var i=0;i < Cubes.length;i++){
+	// 	setTimeout(rotateCube(i),5000);
+	// }
+	Cubes[0].style.transform = `rotateY(${pos}deg)`;
+	console.log(Cubes[0].style.transform )
+	if(pos===0){
+		front.forEach((item)=>{
+			item.style.boxShadow = '3px 3px 10px white';
+		})
+	}
+	else{
+		front.forEach((item)=>{
+			item.style.boxShadow ='0px';
+		})
+	}
+	setTimeout(()=>{
+		Cubes[1].style.transform = `rotateY(${pos}deg)`;
+	},500)
+	setTimeout(()=>{
+		Cubes[2].style.transform = `rotateY(${pos}deg)`;
+	},500)
+
+
+	});
+
+
+	btnPrev.addEventListener("click", () => {
+		console.log('hi');
+	
+	  pos += 90;
+		Cubes[0].style.transform = `rotateY(${pos}deg)`;
+		setTimeout(()=>{
+			Cubes[1].style.transform = `rotateY(${pos}deg)`;
+		},500)
+		setTimeout(()=>{
+			Cubes[2].style.transform = `rotateY(${pos}deg)`;
+		},500)
+
+		});
+
+
+//Aditya js ends
 
 
