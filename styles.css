@@ -136,6 +136,13 @@ p{
   left: 10%;
 } */
 
+.zbr1:hover,.zbr2:hover,.zbr3:hover,.zbr4:hover,.zbr5:hover{
+  scale: 1.25;
+  transition: .2s ease-in-out 0s;
+}
+
+
+
 .zrour{
   display:flex ;
   flex-direction: row;
@@ -910,11 +917,10 @@ ul {
 }
 
 .RpreloadImg {
-
   /* transform: rotate(0deg); */
   transform-origin: 57.73502691896258% 50%;
   width: 10vw;
-  animation: rotation 6s infinite linear;
+  animation: rotation 1s infinite linear;
 }
 
 :root {
@@ -1171,7 +1177,7 @@ Animations
 }
 
 .Rca {
-  padding: 7.5px;
+  /* padding: 7.5px; */
   margin-top: 131.25px;
   height: fit-content;
   width: 140px;
@@ -1185,9 +1191,17 @@ Animations
 }
 
 .Rca p {
+  width: 150px;
+  padding: 7.5px;
+  /* height: 50px; */
   font-size: 30px;
   font-family: Helvetica;
   color: white;
+}
+
+.Rca:hover {
+  transition: .2s ease-in-out 0s;
+  background: black;
 }
 
 .Rca p:hover span {
@@ -1453,6 +1467,7 @@ width: 93px;
   width: auto;
   margin: 30px;
 }
+
 
 /* title CSS "What we do part " */
 
@@ -1823,5 +1838,55 @@ hr{
 } */
 
 
+@media screen and (max-width: 1050px) {
+  #ama_cards .a_container{
+    height: 500px;
+  }
+}
 
+@media screen and (max-width: 900px) {
+ .zrour{
+  flex-direction: column;
+ }
 
+ .zpara_theme, .ziframe{
+  width: 70vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+ }
+
+ .bgblue{
+  margin: 6vw;
+  margin-top: 10px;
+ }
+
+ .zimg{
+  left: 0px;
+ }
+}
+
+@media screen and (max-width: 750px) {
+  #ama_cards .a_container{
+    height: 700px;
+  }
+
+  #slider .cont_wrapper{
+    gap: 4rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container, .card{
+    scale: 0.9;
+  }
+
+  #slider .cont_wrapper{
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .container, .card{
+    scale: 0.8;
+  }
+}
