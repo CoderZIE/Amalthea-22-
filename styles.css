@@ -1845,6 +1845,7 @@ hr{
 #small_slider{
     display: flex;
     align-items: center;
+    padding:50px;
     justify-content: center;
 }
 .img-slider{
