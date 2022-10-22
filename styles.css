@@ -1929,6 +1929,64 @@ hr{
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
 
+
+
+
+
+@media (max-width: 620px){
+  .img-slider{
+    width: 400px;
+    height: 250px;
+  }
+
+  .img-slider .slide_small_slider .info{
+    padding: 10px 20px;
+  }
+
+  .img-slider .slide_small_slider .info h2{
+    font-size: 30px;
+  }
+
+  .img-slider .slide_small_slider .info p{
+    width: 80%;
+    font-size: 13px;
+  }
+
+  .img-slider .navigation{
+    bottom: -20px;
+  }
+
+  .img-slider .navigation .btn_small_slider{
+    width: 8px;
+    height: 8px;
+    margin: 6px;
+  }
+}
+
+@media (max-width: 420px){
+  .img-slider{
+    width: 320px;
+    height: 200px;
+  }
+
+  .img-slider .slide_small_slider .info{
+    padding: 5px 10px;
+  }
+
+  .img-slider .slide_small_slider .info h2{
+    font-size: 25px;
+  }
+
+  .img-slider .slide_small_slider .info p{
+    width: 90%;
+    font-size: 11px;
+  }
+
+  .img-slider .navigation{
+    bottom: -15px;
+  }
+}
+
 /* ADITYA SMALL SCREEN SLIDER ENDS */
 
 @media screen and (max-width: 1200px) {
