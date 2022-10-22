@@ -396,7 +396,101 @@
         </div>
       </div>
     </section>
+      
+      
+      
+      
+    <section id="small_slider">
+      
+    
+    <div class="img-slider">
+      <div class="slide_small_slider active_small_slider">
+        <img src="1.jpg" alt="">
+      </div>
+      <div class="slide_small_slider">
+        <img src="2.jpg" alt="">
 
+      </div>
+      <div class="slide_small_slider">
+        <img src="3.jpg" alt="">
+
+      </div>
+      <div class="slide_small_slider">
+        <img src="4.jpg" alt="">
+
+      </div>
+      <div class="slide_small_slider">
+        <img src="5.jpg" alt="">
+
+      </div>
+      <div class="navigation">
+        <div class="btn_small_slider active_small_slider"></div>
+        <div class="btn_small_slider"></div>
+        <div class="btn_small_slider"></div>
+        <div class="btn_small_slider"></div>
+        <div class="btn_small_slider"></div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+    var slides = document.querySelectorAll('.slide_small_slider');
+    var btns = document.querySelectorAll('.btn_small_slider');
+    let currentSlide = 1;
+
+    // Javascript for image slider manual navigation
+    var manualNav = function(manual){
+      slides.forEach((slide) => {
+        slide.classList.remove('active_small_slider');
+
+        btns.forEach((btn) => {
+          btn.classList.remove('active_small_slider');
+        });
+      });
+
+      slides[manual].classList.add('active_small_slider');
+      btns[manual].classList.add('active_small_slider');
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        manualNav(i);
+        currentSlide = i;
+      });
+    });
+
+    // Javascript for image slider autoplay navigation
+    var repeat = function(activeClass){
+      let active = document.getElementsByClassName('active_small_slider');
+      let i = 1;
+
+      var repeater = () => {
+        setTimeout(function(){
+          [...active].forEach((activeSlide) => {
+            activeSlide.classList.remove('active_small_slider');
+          });
+
+        slides[i].classList.add('active_small_slider');
+        btns[i].classList.add('active_small_slider');
+        i++;
+
+        if(slides.length == i){
+          i = 0;
+        }
+        if(i >= slides.length){
+          return;
+        }
+        repeater();
+      }, 5000);
+      }
+      repeater();
+    }
+    repeat();
+    </script>
+
+      
+      
+      
+     </section>
     <!-- <script src="index.js" charset="utf-8"></script> -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
