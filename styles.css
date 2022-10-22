@@ -1842,7 +1842,11 @@ hr{
 
 }
 /* ADITYA SLIDER FOR SMALL SCREEN */
-
+#small_slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .img-slider{
   position: relative;
   width: 800px;
