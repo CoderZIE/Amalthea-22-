@@ -1989,7 +1989,7 @@ hr{
   }
 }
 
-@media (max-width: 420px){
+@media (max-width: 490px){
   .img-slider,.img-slider .slide_small_slider,.img-slider .slide_small_slider img{
     width: 320px;
     height: 200px;
