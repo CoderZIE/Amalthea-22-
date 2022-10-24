@@ -372,6 +372,13 @@ let cubes = document.querySelectorAll(".image-cube");
 let cube = document.querySelectorAll(".image-cube");
 let btnNext = document.querySelector("#next");
 let btnPrev = document.querySelector("#prev");
+extra();
+function extra(){
+	document.querySelector("#next").click();
+	setTimeout(()=>{
+		extra();
+	},5000);
+}
 function rotateCube(i) {
   cubes[i].style.transform = `rotateY(${pos}deg)`;
 }
