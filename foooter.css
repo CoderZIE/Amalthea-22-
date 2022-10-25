@@ -1,7 +1,9 @@
 #Vedant .amlhead{
-    padding-left: 1.6rem;
+    font-family: Proxima_Bold;
     color: #ae0957;
+    font-weight: 600;
     font-size: 2.2rem;
+    margin-bottom: 14px;
 }
 
 #Vedant .add{
@@ -9,7 +11,10 @@
 }
 
 #Vedant .location{
-    font-size: 1.8rem;
+    padding-right: 0.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
 }
 
 #Vedant .mail1{
@@ -23,7 +28,7 @@
 }
 
 #Vedant .maillo2{
-    padding-right: 0.3rem;
+    padding-right: 0.5rem;
     font-size: 1.5rem;
 }
 
@@ -32,16 +37,16 @@
     font-size: 1.5rem;
     margin-top: 1rem;
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
 }
 
 #Vedant .pad2{
-    padding-inline: 0.7rem;
+    padding-inline: 0.5rem;
 }
 
 #Vedant .one-part {
-    margin-left: 2rem;
-    margin-top: 3%; 
+    margin-left: 5rem;
+    margin-top: 2%; 
     display: flex;
     flex-direction: column;
     width: 20%;
@@ -55,8 +60,9 @@ footer {
 }
 
 #Vedant .heading {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #ae0957;
+    font-family: 'Proxima_Bold';
     /* margin-top: 10%; */
     margin-bottom: 1.2rem;
 }
@@ -66,14 +72,17 @@ footer {
     flex-direction: column;
     /* justify-content: center; */
     /* align-items: center; */
-    width: 20%;
+    width: 15%;
     margin-top:2rem;
     padding-left: 2rem;
     margin-inline: 1.5rem;
+    margin-left: 5%;
+
 }
 
 #Vedant .i {
-    margin-top: 0.1rem;
+    cursor: pointer;
+    margin-top: 0.4rem;
 }
 
 /* .subscribe {
@@ -92,15 +101,15 @@ footer {
 
 #Vedant .submitbox{
     display: flex;
-    width: 36rem;
-    margin-top: 2rem;
+    width: 29rem;
+    margin-top: 1.6rem;
 }
 
 #Vedant .mailkl{
     display: flex;
     /* border: 2px solid white; */
     width: 10rem;
-    margin-left: 6rem;
+    margin-left: 1rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     background-color: #c1095e;
@@ -137,8 +146,8 @@ footer {
 }
 
 #Vedant #container h2 {
-    background: url(https://static.pexels.com/photos/5782/nature-flowers-vintage-plant.jpg);
-    /*   الكود المسؤال عن اضافة شفافية للنص */
+    background: black;
+    /* background: url(https://static.pexels.com/photos/5782/nature-flowers-vintage-plant.jpg); */
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     	/* background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%); */
@@ -162,6 +171,7 @@ footer {
 }
 
 #Vedant #container input {
+    font-family: Proxima;
     /* 	background: rgba(255, 13, 254, 0.90); */
     width: auto;
     display: inline-block;
@@ -173,6 +183,10 @@ footer {
     border: none;
     color: #222;
     transition: 0.3s linear;
+}
+
+#sub{
+font-family:Proxima;
 }
 
 ::placeholder {
@@ -221,6 +235,13 @@ footer {
 
 #Vedant .white1{
     color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mail, .map{
+    text-decoration: none;
 }
 
 #Vedant123{
@@ -229,21 +250,55 @@ footer {
     padding: 0.8rem;
     font-size: 0.8rem;
     padding-left: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 20px;
+    bottom: 20px;
+    z-index: 996;
+    background: #47b2e4;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: all 0.4s;
+}
+
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1;
 }
 
 @media only screen and (min-width:900px) and (max-width:1200px){
     #Vedant *{
-        font-siZe: 13px;
+        font-size: 13px;
     }
+
 }
 
-@media only screen and (min-width:700px) and (max-width:900px){
+
+@media only screen and (min-width:750px) and (max-width:900px){
     #Vedant *{
-        font-siZe: 10px;
+        font-size: 10px;
     }
 }
 
-@media only screen and (min-width:400px) and (max-width:700px){
+@media only screen and (max-width:750px){
+    #Vedant .mailkl{
+        width: 8rem;
+    }
+
+    #Vedant .mailkl img{
+        width: 7.5rem;
+        height: unset;
+    }
+}
+
+@media only screen and (min-width:400px) and (max-width:750px){
     footer{
         flex-wrap: wrap;
         justify-content: space-around;
@@ -252,7 +307,7 @@ footer {
         font-size: 10px;
     }
     #Vedant .ql{
-        margin-left: 8rem;
+        margin-left: 6rem;
     } 
 
     #Vedant .submitbox{
@@ -260,7 +315,7 @@ footer {
     }
 }
 
-@media only screen and (min-width:200px) and (max-width: 400px){
+@media only screen and (max-width: 400px){
     footer{
         flex-wrap: wrap;
         justify-content: space-around;
@@ -270,9 +325,108 @@ footer {
     }
     #Vedant .ql{
         margin-left: 8rem;
+        padding: 0;
     } 
+
+    #Vedant .ext-links{
+        width: 22%;
+    }
 
     #Vedant .submitbox{
         margin-top: 2rem;
+        scale: 0.75;
     } 
+    
+}
+
+@media only screen and (max-width: 300px){
+    #Vedant .ql{
+        margin-left: 5rem;
+}
+}
+
+/* Rudra CSS */
+@media only screen and (max-width:1000px){
+    #Vedant .one-part{
+        margin-left: 2rem;
+    }   
+    .headingFont p{
+        font-size: 15px !important;
+    }
+}
+
+@media only screen and (max-width:900px){
+    
+    .one-part,.ql{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .submitbox{
+        width: 25rem!important;
+    }
+    .amlhead{
+        font-size: 1.6rem !important;    
+    }
+    .one-part{
+        margin-top: 4% !important;
+        margin-left: 2rem !important;
+        margin-right: 2rem !important;
+    }
+
+    .ext-links{
+        width: 15% !important;
+    }
+}
+
+
+@media only screen and (max-width:750px){
+    .one-part,.ext-links{
+        width: 30% !important;
+    }
+    .ql{
+        width: 36%;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .one-part{
+        width: 40% !important;
+        margin-left: 1rem !important;
+        margin-right: -0.5rem !important;
+    }
+    .ql{
+        width: 20% !important;
+    }
+    .ext-links{
+        width: 28% !important;
+    }
+}
+
+
+@media only screen and (max-width:400px){
+.amlhead{
+    font-size: 1.3rem !important;
+}
+.one-part{
+    margin-top: 8% !important;
+}
+}
+
+
+@media only screen and (max-width:350px){
+    .amlhead{
+        font-size: 1.2rem !important;
+    }
+    .one-part{
+        margin-top: 11% !important;
+        width: 35% !important;
+        margin-left: 0.5rem !important;
+    }
+
+    .ql{
+        margin-left: 21px !important;
+    }
 }
