@@ -1768,6 +1768,30 @@ hr{
   top:10px;
   left: 10px;
 }
+#slider .right h1{
+
+  color: black;
+  z-index: 10;
+  position: absolute;
+  top:10px;
+  left: 10px;
+}
+#slider .back h1{
+
+  color: black;
+  z-index: 10;
+  position: absolute;
+  top:10px;
+  left: 10px;
+}
+#slider .left h1{
+
+  color: black;
+  z-index: 10;
+  position: absolute;
+  top:10px;
+  left: 10px;
+}
 #slider .front {
   position: relative;
   box-shadow: 3px 3px 10px white;
