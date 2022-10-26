@@ -1163,6 +1163,8 @@ Nav Styles
 }
 
 .nav-wrapper {
+  /* display: none; */
+  /* scale: 0; */
   position: relative;
   overflow: hidden;
   overflow-y: auto;
@@ -1241,6 +1243,11 @@ Animations
   top: 0;
   transform: scale(1);
 }
+#toggle:checked+.nav-wrapper{
+  transform: scale(1);
+  display: unset;
+}
+
 
 /* Middle Part of Header */
 .RcentralPart {
@@ -2075,6 +2082,11 @@ hr {
 
   .hamburger {
     display: block;
+  }
+
+  .nav-wrapper{
+    /* display: unset; */
+    /* scale: 0; */
   }
 }
 
