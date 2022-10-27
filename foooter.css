@@ -1,5 +1,7 @@
 #Vedant .amlhead{
+
     font-family: Proxima_Bold;
+
     color: #ae0957;
     font-weight: 600;
     font-size: 2.2rem;
@@ -11,8 +13,10 @@
 }
 
 #Vedant .location{
+
     padding-right: 0.5rem;
     font-size: 1.5rem;
+
     display: flex;
     align-items: center;
 }
@@ -82,7 +86,9 @@ footer {
 
 #Vedant .i {
     cursor: pointer;
+
     margin-top: 0.4rem;
+
 }
 
 /* .subscribe {
@@ -102,7 +108,9 @@ footer {
 #Vedant .submitbox{
     display: flex;
     width: 29rem;
+
     margin-top: 1.6rem;
+
 }
 
 #Vedant .mailkl{
@@ -252,6 +260,7 @@ font-family:Proxima;
     padding-left: 2rem;
     display: flex;
     justify-content: center;
+
 }
 
 .back-to-top {
@@ -271,6 +280,7 @@ font-family:Proxima;
 .back-to-top.active {
     visibility: visible;
     opacity: 1;
+
 }
 
 @media only screen and (min-width:900px) and (max-width:1200px){
@@ -342,6 +352,7 @@ font-family:Proxima;
 @media only screen and (max-width: 300px){
     #Vedant .ql{
         margin-left: 5rem;
+
 }
 }
 
@@ -429,4 +440,5 @@ font-family:Proxima;
     .ql{
         margin-left: 21px !important;
     }
+
 }

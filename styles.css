@@ -32,6 +32,7 @@
 }
 
 /* CSS by Zaqi Momin */
+
 html {
   scroll-behavior: smooth;
 }
@@ -59,7 +60,7 @@ p {
   color: #ffffff;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .zhead_title {
@@ -191,15 +192,18 @@ p {
   left: 10%;
 } */
 
+
 .zbr1:hover,
 .zbr2:hover,
 .zbr3:hover,
 .zbr4:hover,
 .zbr5:hover {
+
   cursor: pointer;
   scale: 1.25;
   transition: .2s ease-in-out 0s;
 }
+
 
 
 
@@ -1214,6 +1218,7 @@ nav a:hover:before {
 /**
 Animations
 **/
+
 #toggle:checked+.hamburger {
   transition: all .4s ease-in-out;
   transition-delay: 0.8s;
@@ -1339,6 +1344,11 @@ Animations
 .Rca:hover {
   transition: .2s ease-in-out 0s;
   background: #212B85;
+}
+
+.Rca:hover {
+  transition: .2s ease-in-out 0s;
+  background: black;
 }
 
 .Rca p:hover span {
@@ -1543,6 +1553,15 @@ Animations
   }
 }
 
+@media only screen and (max-width: 1100px) {
+  .nav{
+    width: 40%;
+}
+  nav{
+    margin-left: 20%;
+  }
+}
+
 @media only screen and (max-width: 775px) {
   .nav {
     width: 50%;
@@ -1570,6 +1589,7 @@ Animations
 }
 
 @media only screen and (max-width: 600px) {
+
   .nav {
     width: 65%;
   }
@@ -1626,6 +1646,7 @@ Animations
   }
 }
 
+
 @media only screen and (max-width: 400px) {
   .RrightSide a img {
     height: 8vw;
@@ -1643,6 +1664,7 @@ Animations
 
   .RmiddlePart {
     transform: translate(-150px, -25px);
+
   }
 
   .Rnavbar ul li a {
@@ -1660,6 +1682,7 @@ Animations
   #RiiiText {
     font-size: 30px;
   }
+
 
   .Rwelcome {
     font-size: 24px;
@@ -1787,6 +1810,7 @@ hr {
 
 #ama_cards .a_container {
   display: flex;
+    padding-bottom: 35px;
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -1923,7 +1947,30 @@ hr {
   top: 10px;
   left: 10px;
 }
+#slider .right h1{
 
+  color: black;
+  z-index: 10;
+  position: absolute;
+  top:10px;
+  left: 10px;
+}
+#slider .back h1{
+
+  color: black;
+  z-index: 10;
+  position: absolute;
+  top:10px;
+  left: 10px;
+}
+#slider .left h1{
+
+  color: black;
+  z-index: 10;
+  position: absolute;
+  top:10px;
+  left: 10px;
+}
 #slider .front {
   position: relative;
   box-shadow: 3px 3px 10px white;
@@ -1971,10 +2018,11 @@ hr {
   background-color: transparent;
   color: #ffffff;
   border: 3px solid #ffffff;
-  padding: 8px 30px;
-  border-radius: 10px;
+  padding: 7px 23px;
+  border-radius: 3px;
   font-size: 20px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 #slider #prev:hover,
@@ -2023,6 +2071,14 @@ hr {
   z-index: -1;
   right: 0;
 
+
+#slider #next{
+  position: relative;
+}
+
+
+#slider .cont_wrapper{
+
   background-color: white;
 }
 
@@ -2030,25 +2086,6 @@ hr {
   position: relative;
 }
 
-/* #next:hover::before{
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: white;
-}
-#next::before{
-  position: absolute;
-  top: 0;
-
-  content: '';
-  bottom: 0;
-  left: 0;
-  right: 100%;
-  transition: 0.3s;
-} */
 
 #slider .cont_wrapper {
   position: relative;
@@ -2060,22 +2097,223 @@ hr {
   gap: 6.5rem;
 
 }
+/* ADITYA SLIDER FOR SMALL SCREEN */
+#small_slider{
+    display: flex;
+    align-items: center;
+    display:none;
+    padding:50px;
+    justify-content: center;
+}
+.img-slider{
+  position: relative;
+  width: 800px;
+  height: 500px;
+  margin: 10px;
+    box-shadow: inset 5px 5px 15px rgb(0 0 0 / 40%), inset -5px -5px 8px rgb(255 255 255 / 50%), 5px 5px 5px rgb(0 0 0 / 30%), -5px -5px 15px rgb(255 255 255 / 40%);
+ 
+}
 
-/* .con_23{
+.img-slider .slide_small_slider{
+  z-index: 1;
+  position: absolute;
+  width: 800px;
+    height: 500px;
+  /* clip-path: circle(0% at 0 50%); */
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+
+
+
+}
+
+.img-slider .slide_small_slider.active_small_slider{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+  transition: 2s;
+  transition-property: clip-path;
+}
+
+.img-slider .slide_small_slider img{
+  z-index: 1;
+  width: 800px;
+    height: 500px;
+  border-radius: 5px;
+}
+
+.img-slider .slide_small_slider .info{
+  position: absolute;
+  top: 0;
+  padding: 15px 30px;
+}
+
+.img-slider .slide_small_slider .info h2{
+  color: #fff;
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.img-slider .slide_small_slider .info p{
+  color: #fff;
+  background: rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  width: 60%;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+
+.img-slider .navigation{
+  z-index: 2;
+  position: absolute;
   display: flex;
-  flex-direction: column;
+  bottom: -35px;
 
-  gap:8.2rem;
-} */
+  left: 50%;
+  transform: translateX(-50%);
+}
 
-@media screen and (max-width: 1230px) {
+.img-slider .navigation .btn_small_slider{
+  background: rgba(255, 255, 255, 0.5);
+  width: 12px;
+  height: 12px;
+  margin: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
 
-  /* .horizontalNavElement{
-    font-size: 16px;
+.img-slider .navigation .btn_small_slider.active_small_slider{
+  background: #2696E9;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1200px){
+    #slider{
+        display:none;
+    }
+    #small_slider{
+        padding: 30px 20px 30px 20px;
+        display:flex;
+    }
+  .img-slider,.img-slider .slide_small_slider,.img-slider .slide_small_slider img{
+    width: 600px;
+    height: 375px;
+  }
+  
+  .img-slider .slide_small_slider .info{
+    padding: 10px 25px;
+  }
+
+  .img-slider .slide_small_slider .info h2{
+    font-size: 35px;
+  }
+
+  .img-slider .slide_small_slider .info p{
+    width: 70%;
+    font-size: 15px;
+  }
+
+  .img-slider .navigation{
+    bottom: -25px;
+  }
+
+  .img-slider .navigation .btn_small_slider{
+    width: 10px;
+    height: 10px;
+    margin: 8px;
   }
 }
 
-@media screen and (max-width: 1135px) { */
+@media (max-width: 650px){
+    #slider{
+        display:none;
+    }
+    #small_slider{
+        display:flex;
+        padding: 20px 10px 20px 10px;
+    }
+  .img-slider,.img-slider .slide_small_slider,.img-slider .slide_small_slider img{
+    width: 400px;
+    height: 250px;
+  }
+
+  .img-slider .slide_small_slider .info{
+    padding: 10px 20px;
+  }
+
+  .img-slider .slide_small_slider .info h2{
+    font-size: 30px;
+  }
+
+  .img-slider .slide_small_slider .info p{
+    width: 80%;
+    font-size: 13px;
+  }
+
+  .img-slider .navigation{
+    bottom: -25px;
+  }
+
+  .img-slider .navigation .btn_small_slider{
+    width: 8px;
+    height: 8px;
+    margin: 6px;
+  }
+}
+
+@media (max-width: 490px){
+    #slider{
+        display:none;
+    }
+    #small_slider{
+        display:flex;
+        padding: 20px 10px 20px 10px;
+    }
+  .img-slider,.img-slider .slide_small_slider,.img-slider .slide_small_slider img{
+    width: 320px;
+    height: 200px;
+  }
+
+  .img-slider .slide_small_slider .info{
+    padding: 5px 10px;
+  }
+
+  .img-slider .slide_small_slider .info h2{
+    font-size: 25px;
+  }
+
+  .img-slider .slide_small_slider .info p{
+    width: 90%;
+    font-size: 11px;
+  }
+
+  .img-slider .navigation{
+    bottom: -25px;
+  }
+}
+
+
+/* ADITYA SMALL SCREEN SLIDER ENDS */
+
+
+@media screen and (max-width: 1050px) {
+  #ama_cards .a_container{
+    height: 500px;
+  }
+}
+
+
+@media screen and (max-width: 750px) {
+  #ama_cards .a_container{
+    height: 700px;
+  }
+
+  #slider .cont_wrapper{
+
+
+@media screen and (max-width: 1230px) {
+
   #horizontalNav {
     display: none;
   }
@@ -2148,6 +2386,7 @@ hr {
   }
 
   #slider .cont_wrapper {
+
     gap: 4rem;
   }
 }
@@ -2168,14 +2407,17 @@ hr {
   }
 
   #slider .cont_wrapper {
+
     gap: 1.5rem;
   }
 }
 
 @media screen and (max-width: 350px) {
 
+
   .container,
   .card {
     scale: 0.8;
   }
 }
+
