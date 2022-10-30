@@ -1544,7 +1544,7 @@ Animations
   }
 
   .Rback-video {
-    height: 635px;
+    height: 100vh;
   }
 }
 
@@ -2384,6 +2384,10 @@ hr {
   .backg{
     background-image: none;
   }
+    
+  .RsectDiv{
+    top: 37px;
+    }
 }
 
 @media screen and (max-width: 750px) {
