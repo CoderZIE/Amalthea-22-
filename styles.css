@@ -2033,59 +2033,17 @@ hr {
 #slider #prev:hover,
 #slider #next:hover {
   color: black;
+  background-color:white;
 }
 
 #slider #prev {
   position: relative;
 }
 
-#slider #next:hover::before {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  right: 0;
-  background-color: white;
-}
-
-#slider #next::before {
-  position: absolute;
-  top: 0;
-  content: '';
-  bottom: 0;
-  left: 0;
-  right: 100%;
-  transition: 0.3s;
-}
-
-#slider #prev::before {
-  position: absolute;
-  top: 0;
-
-  content: '';
-  bottom: 0;
-  left: 100%;
-  right: 0;
-  transition: 0.3s;
-}
-
-#slider #prev:hover::before {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  right: 0;
-
-}
 #slider #next{
   position: relative;
 }
 
-
-#slider .cont_wrapper{
-
-  /* background-color: white; */
-}
 
 #slider #next {
   position: relative;
