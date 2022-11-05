@@ -1004,6 +1004,7 @@ hr {
   background-size: 100vw ;
   transform: translateY(-0);
   padding-top: 50px;
+  margin-top: 65px;
 }
 
 ul {
@@ -1067,7 +1068,7 @@ ul {
   z-index: -1;
   width: 100%;
   position: relative;
-  top: 12px;
+  top: 65px;
   height: 80px;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 1));
 }
@@ -1076,7 +1077,7 @@ ul {
   z-index: -1;
   object-fit: fill;
   width: 100%;
-  height: 721px;
+  height: 670px;
   position: absolute;
   left: 0;
   top: 0;
@@ -1544,7 +1545,15 @@ Animations
   }
 
   .Rback-video {
-    height: 100vh;
+    height: 634px;
+  }
+
+  .RsectDiv{
+    top: 0px;
+  }
+
+  .backg{
+    margin-top: 0px;
   }
 }
 
@@ -1618,7 +1627,7 @@ Animations
   }
 
   .Rca {
-    transform: translateY(25px);
+    /* transform: translateY(25px); */
   }
 
   .zpara_theme,
@@ -2342,10 +2351,11 @@ hr {
   .backg{
     background-image: none;
   }
-    
+
   .RsectDiv{
-    top: -37px;
-    }
+    top: -40px;
+  }
+    
 }
 
 @media screen and (max-width: 750px) {
