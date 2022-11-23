@@ -414,10 +414,10 @@ btnPrev.addEventListener("click", () => {
   cubes[0].style.transform = `rotateY(${pos}deg)`;
   setTimeout(() => {
     cubes[1].style.transform = `rotateY(${pos}deg)`;
-  }, 500)
+  }, 00)
   setTimeout(() => {
     cubes[2].style.transform = `rotateY(${pos}deg)`;
-  }, 500)
+  }, 00)
 
 });
 
